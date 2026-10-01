@@ -4,6 +4,8 @@ A simple Node.js and Express web application built to practice a complete CI/CD 
 
 The project contains a web interface, REST API endpoints, automated tests, code linting, and an automated Docker image build-and-push pipeline.
 
+![Main image](https://github.com/Workwithaditya01/nodejs-demo-app/blob/6ba4537e3dcf2e7fe7936a1588d877dce6522c89/Images/Update%20frontend%20image.png)
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
