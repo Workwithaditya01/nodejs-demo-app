@@ -67,7 +67,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/nodejs-demo-app
+          images: ${{ vars.DOCKER_USERNAME }}/nodejs-demo-app
           tags: | 
             type=raw,value=latest 
             type=sha,format=short
