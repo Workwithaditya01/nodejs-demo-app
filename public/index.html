@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>NodeJS Demo App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="brand">
+        <div class="brand-icon">N</div>
+        <span>NodeJS Demo</span>
+      </div>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        <span>System Online</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+
+        <div class="hero-text">
+          <div class="badge">
+            <span>⚡</span>
+            CI/CD Powered Application
+          </div>
+
+          <h1>
+            Build.
+            <span>Test.</span>
+            Deploy.
+          </h1>
+
+          <p>
+            A simple Node.js application demonstrating modern
+            development and DevOps practices with automated
+            testing, Docker, and GitHub Actions.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#calculator" class="btn primary">
+              Try the App →
+            </a>
+
+            <a href="#architecture" class="btn secondary">
+              Explore Stack
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <span>nodejs-demo-app</span>
+          </div>
+
+          <div class="terminal-body">
+            <p>
+              <span class="terminal-green">$</span>
+              npm start
+            </p>
+
+            <p class="terminal-muted">
+              Starting application...
+            </p>
+
+            <p>
+              <span class="terminal-green">✓</span>
+              Server running on port 3000
+            </p>
+
+            <p>
+              <span class="terminal-green">✓</span>
+              Health check passed
+            </p>
+
+            <p>
+              <span class="terminal-green">✓</span>
+              Application ready
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="container stats-grid">
+
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Automated Tests</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-number">Docker</span>
+          <span class="stat-label">Containerized</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-number">CI/CD</span>
+          <span class="stat-label">GitHub Actions</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-number">Node.js</span>
+          <span class="stat-label">Backend Runtime</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Architecture -->
+    <section class="section" id="architecture">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">TECHNOLOGY STACK</span>
+
+          <h2>
+            Built with modern tools
+          </h2>
+
+          <p>
+            A lightweight application designed to demonstrate
+            the complete development and CI/CD workflow.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+
+          <div class="tech-card">
+            <div class="tech-icon">JS</div>
+
+            <h3>Node.js</h3>
+
+            <p>
+              JavaScript runtime powering the backend
+              application and REST API.
+            </p>
+
+            <span class="tech-tag">Backend</span>
+          </div>
+
+
+          <div class="tech-card">
+            <div class="tech-icon">EX</div>
+
+            <h3>Express</h3>
+
+            <p>
+              Lightweight web framework used to build
+              routes and serve the application.
+            </p>
+
+            <span class="tech-tag">Framework</span>
+          </div>
+
+
+          <div class="tech-card">
+            <div class="tech-icon">🐳</div>
+
+            <h3>Docker</h3>
+
+            <p>
+              Packages the application into a portable
+              and reproducible container.
+            </p>
+
+            <span class="tech-tag">Container</span>
+          </div>
+
+
+          <div class="tech-card">
+            <div class="tech-icon">⚙</div>
+
+            <h3>GitHub Actions</h3>
+
+            <p>
+              Automates linting, testing, Docker builds,
+              and image publishing.
+            </p>
+
+            <span class="tech-tag">CI/CD</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Calculator -->
+    <section class="section calculator-section" id="calculator">
+
+      <div class="container">
+
+        <div class="calculator-card">
+
+          <div class="calculator-info">
+
+            <span class="section-label">
+              API DEMO
+            </span>
+
+            <h2>
+              Test the Node.js API
+            </h2>
+
+            <p>
+              Enter two numbers and the frontend will call
+              the Express API running inside your application.
+            </p>
+
+            <div class="endpoint">
+              <span>GET</span>
+              /add/:a/:b
+            </div>
+
+          </div>
+
+
+          <div class="calculator">
+
+            <div class="input-group">
+
+              <label for="numberA">
+                First Number
+              </label>
+
+              <input
+                type="number"
+                id="numberA"
+                placeholder="Enter number"
+              />
+
+            </div>
+
+
+            <div class="plus">
+              +
+            </div>
+
+
+            <div class="input-group">
+
+              <label for="numberB">
+                Second Number
+              </label>
+
+              <input
+                type="number"
+                id="numberB"
+                placeholder="Enter number"
+              />
+
+            </div>
+
+
+            <button
+              class="calculate-btn"
+              onclick="calculateSum()"
+            >
+              Calculate
+            </button>
+
+
+            <div
+              id="result"
+              class="result"
+            >
+              Result will appear here
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Health -->
+    <section class="health-section">
+
+      <div class="container">
+
+        <div class="health-card">
+
+          <div>
+
+            <span class="section-label">
+              APPLICATION STATUS
+            </span>
+
+            <h2>
+              Health Check
+            </h2>
+
+            <p id="healthMessage">
+              Checking application status...
+            </p>
+
+          </div>
+
+          <button
+            class="health-btn"
+            onclick="checkHealth()"
+          >
+            Check Status
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <div>
+        <strong>NodeJS Demo App</strong>
+
+        <p>
+          Built to learn modern DevOps practices.
+        </p>
+      </div>
+
+      <div class="footer-tech">
+        Node.js · Docker · GitHub Actions
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
